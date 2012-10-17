@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:padding="0dip" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/home_head_bg"
+        android:gravity="center" >
+
+        <TextView
+            style="@style/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" >
+        </TextView>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/devide"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/top"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/red" >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/devide"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/title_line"
+            style="@style/text_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="@string/info_line" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/keyword_line"
+            style="@style/text_body"
+            android:layout_width="130dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/title_line"
+            android:hint="@string/keyword_hint"
+            android:lines="1"
+            android:maxLength="10"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/info_line"
+            style="@style/text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/keyword_line"
+            android:background="@drawable/rectange_bg_selector"
+            android:text="@string/submit" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mgps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/title_gps"
+            style="@style/text_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="@string/info_gps" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/keyword_gps"
+            style="@style/text_body"
+            android:layout_width="130dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/title_gps"
+            android:hint="@string/keyword_hint"
+            android:lines="1"
+            android:maxLength="10"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/info_gps"
+            style="@style/text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/keyword_gps"
+            android:background="@drawable/rectange_bg_selector"
+            android:text="@string/submit" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/station"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mgps"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/title_station"
+            style="@style/text_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="@string/info_station" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/keyword_station"
+            style="@style/text_body"
+            android:layout_width="130dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/title_station"
+            android:hint="@string/keyword_hint"
+            android:lines="1"
+            android:maxLength="10"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/info_station"
+            style="@style/text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/keyword_station"
+            android:background="@drawable/rectange_bg_selector"
+            android:text="@string/submit" >
+        </TextView>
+    </RelativeLayout>
+	<TextView
+            android:id="@+id/mypositon"
+            style="@style/text_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_below="@id/station"
+            android:visibility="gone"
+            android:text="" >
+        </TextView>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/mypositon"
+        android:layout_marginBottom="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/red" >
+            </View>
+
+            <TextView
+                style="@style/ps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/content" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/red" >
+            </View>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

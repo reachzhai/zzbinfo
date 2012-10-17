@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ZZBInFoActivity!</string>
+    <string name="app_name">郑州公交信息</string>
+    <string name="info_line">线路查询:</string>
+    <string name="info_gps">候车查询:</string>
+    <string name="info_station">站点查询:</string>
+    <string name="info_changebus">换成查询:</string>
+    <!-- 错误的标题 -->
+    <string name="errorTitle"><strong>温馨提示</strong></string>
+    <!-- 没有网络的提示 -->
+    <string name="nonetwork"><strong>您现在没有网络连接</strong></string>
+    <!-- 网络异常、服务器返回代码非200、解析错误所提示用户的信息 -->
+    <string name="errorContent"><strong>网络异常，是否重新尝试连接？</strong></string>
+    <!-- 网络超时 -->
+    <string name="timeout"><strong>请求超时，您的网络可能有问题哦~</strong></string>
+    <string name="back">返回</string>
+    <string name="refresh">刷新</string>
+    <string name="result_title">查询结果</string>
+    <string name="keyword_hint">请输入信息</string>
+    <string name="submit">查询</string>
+    <string name="input_error">输入信息有误，无法查询</string>
+    <string name="loadTitle"><strong>正在更新数据</strong></string>
+    <!-- 下载数据提示内容 -->
+    <string name="LoadContent"><strong>请稍候……</strong></string>
+    <string name="content">使用方法：<br />
+1、线路查询。如：1路，系统会给出与1路相关的几条线路，选择你所要查询的线路后，系统会列出该线路的详细信息，并可以点击上下行站点查看经过该站点的其他线路。<br />
+2、站点查询。如：大石桥，系统会给出与大石桥相关的站点信息，选择你所要查询的站点后，系统会列出途经该站点的所有公交线路，选择你所要查询的线路，系统将列出该线路的详细信息。<br />
+3、换乘查询。如：从火车站到紫荆山。输入起始站点击查询，先选择你所要查询的起点站，再选择你要查询的终点站，系统列出相应的换乘信息。<br />
+4、GPS候车查询。如：1路。系统会给出与1路相关的几条线路，先选择你所要查询的线路，再选择你要查询的线路方向，然后选择你要查询的站点，系统列出站点当前的车辆运行情况。<br />
+说明：<br />
+如果不确定自己的位置，可直接拨打郑州公交客服热线63881333，公交客服会为你解答相关问题。<br />
+    </string>
+
+</resources>
